@@ -23,7 +23,7 @@ do
 		if [ `echo "$CURRENT" | wc -w ` -gt "$CURRENTEXISTS" ] 
 		then
 			echo `date` ": New Authenticated device $DEVICE connected, attempting to unlock the door" >> "$LOGFILE"
-			python3 unlockdoor.py '"$MAIN_DOOR"'
+			python3 unlockdoor.py \'$MAIN_DOOR\'
 			ALIVE=`expr $ALIVE + $SLEEP`
 			echo `date` ": Unlocked door" >> "$LOGFILE"
 		elif [ $ALIVE -gt $ALIVECHECK ]
