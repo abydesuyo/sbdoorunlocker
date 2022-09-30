@@ -26,7 +26,7 @@ def main():
         deviceId = getDeviceId(sys.argv[1])
         status = sb.getDeviceStatus(deviceId)
         if status == 'locked':
-            logging.info("Attempting Unlock")
+            logging.info("Attempting to Unlock")
             sb.unlockDevice(deviceId)
         else:
             logging.info("Device is already Unlocked")
