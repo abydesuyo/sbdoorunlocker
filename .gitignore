@@ -1,3 +1,8 @@
-auth/*
-log/*
-source/*
+auth/approved.txt
+auth/connected.txt
+log/monitor.log
+log/monitor.pid
+log/unlocker.log
+running
+source/*.*
+__pycache__/
